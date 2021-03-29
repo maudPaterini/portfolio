@@ -6,12 +6,15 @@ import reportWebVitals from './reportWebVitals';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { ThemeProvider } from '@material-ui/core/styles';
 import {theme} from "./Theme";
+import {BrowserRouter} from "react-router-dom";
 
 ReactDOM.render(
   <React.StrictMode>
       <ThemeProvider theme={theme}>
       <CssBaseline/>
+      <BrowserRouter>
         <App />
+      </BrowserRouter>
       </ThemeProvider>
   </React.StrictMode>,
   document.getElementById('root')

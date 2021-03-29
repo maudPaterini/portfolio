@@ -3,6 +3,7 @@ import {createStyles, makeStyles, styled, Theme} from '@material-ui/core/styles'
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import {Button} from "@material-ui/core";
+import {Link} from 'react-router-dom'
 
 
 const useStyles = makeStyles((theme: Theme) =>
@@ -45,10 +46,10 @@ export default function Header() {
     return (
             <StyledAppBar position="static">
                 <Toolbar>
-                    <Button>Accueil</Button>
+                    <Link to="/"><Button>Accueil</Button></Link>
                     <Button>Mon CV</Button>
                     <Button>Réalisations</Button>
-                    <Button>Contact</Button>
+                    <Link to="contact"><Button>Contact</Button></Link>
                     <Button variant="contained">Recrutez-moi</Button>
                 </Toolbar>
 
